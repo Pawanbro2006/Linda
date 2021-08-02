@@ -76,42 +76,36 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = f"""
-𝐇𝐞𝐥𝐥𝐨, \n 𝗜'𝗺 𝗦𝗼𝗽𝗵𝗶𝗮 
-𝗜'𝗺 𝗛𝗲𝗿𝗲 𝘁𝗼 𝗵𝗲𝗹𝗽 𝘆𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽𝘀! 𝗛𝗶𝘁 /help [️️ ️](https://telegra.ph/file/583b241199a6c0c0fa38c.jpg)
+Hello𝗜'𝗺 Linda
+𝗜'𝗺 𝗛𝗲𝗿𝗲 𝘁𝗼 𝗵𝗲𝗹𝗽 𝘆𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽𝘀! 𝗛𝗶𝘁 /help [️️ ️](CAACAgIAAxkBAAICVmEHcdi1S_NyoP8TfkurF1TCaYbGAALtAwACRvusBKmEs35zzy1TIAQ)
 Project By @Theekshana_Official ❤
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕ Add Sophia to your Group ➕", url="t.me/Sophia?startgroup=true"),
+            text="➕ Add Linda to your Group ➕", url="t.me/TheLindaBot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="Source Code 🗒️", callback_data="source_"),
-        InlineKeyboardButton(
-            text="System Stats 💻", callback_data="stats_callback"
-        ),
-    ],
-    [
-        InlineKeyboardButton(text="Linda Updates", url=f"https://t.me/dihanofficial"),
+        InlineKeyboardButton(text="Linda Updates", url=f"https://t.me/Theekshana_Official"),
         InlineKeyboardButton(
             text="Linda Support", url=f"https://t.me/Theekshana_Support"
         ),
     ],
     [
-        InlineKeyboardButton(text="❓ Commands Help ", callback_data="help_back"),
+        InlineKeyboardButton(text="BOT Commands Help ", callback_data="help_back"),
     ],
 ]
 
 
 HELP_STRINGS = """
-`Hi.. I'm` 𝗦𝗼𝗽𝗵𝗶𝗮 
-Click On The Buttons Below To Get Documentation About Specific Modules..
-Powered by @dihanofficial 💓 [️️ ️](https://telegra.ph/file/583b241199a6c0c0fa38c.jpg) """
+Hello there, I'm Linda (https://t.me/Theekshana_Support)
+I'm a Powerful group manager bot With Cool Modules. Made by 𝙏𝙃𝙀𝙀𝙆𝙎𝙃𝘼𝙉𝘼 (https://t.me/Theekshana_Official)
+Hit /help to find my list of available commands [️️ ️] """
 
 
 DONATE_STRING = """Hey, glad to hear you want to donate!
- You can support the project Of [Dihan Randila](t.me/dihanrandila) \
+ You can support the project Of [𝙏𝙃𝙀𝙀𝙆𝙎𝙃𝘼𝙉𝘼](t.me/ImTheekshana
  Supporting isnt always financial! [Dihan Official](t.me/dihanofficial) \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
@@ -399,8 +393,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..😍 I'm *Sophia*
-                 \nHere is the [Source Code](https://github.com/dihanofficial/Sophia) .""",
+            text=""" Hello I'm Linda
+                 \nHere is the [Developer](T.me/ImTheekshaNa)
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
